@@ -605,17 +605,6 @@ paths:
           required: true
           schema:
             type: string
-      requestBody:
-        content:
-          application/json; x-api-version=1.0:
-            schema:
-              $ref: '#/components/schemas/FcmModel'
-          text/json; x-api-version=1.0:
-            schema:
-              $ref: '#/components/schemas/FcmModel'
-          application/*+json; x-api-version=1.0:
-            schema:
-              $ref: '#/components/schemas/FcmModel'
       responses:
         '200':
           description: Success
