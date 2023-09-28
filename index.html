@@ -6,17 +6,18 @@
     <link rel=”stylesheet” type=”text/css” href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.31.1/swagger-ui.css">
     <script src="https://unpkg.com/swagger-ui-dist@3.23.1/swagger-ui-bundle.js"></script>
     <title>OpenAPI Petstore</title>
-    <script>
-      window.onload = function () {
-        const ui = SwaggerUIBundle({
-          url: "openapi.yaml",
-          dom_id: "openapi"
-        })
-      }
-    </script>
+    
   </head>
   <body>
     <div id=”openapi”>
+    <script>
+        window.onload = function () {
+            const ui = SwaggerUIBundle({
+            url: "openapi.yaml",
+            dom_id: "#openapi"
+            })
+        }
+    </script>
   </body>
   
 </html>
